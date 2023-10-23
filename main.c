@@ -3,13 +3,11 @@ leone duarte de oliveira
 italo rodirgues
 charlys machado  */
 
-
-
 #include <stdio.h>
 #include <stdlib.h>
-#include "Pilha.h"
+#include "pilha.c"
 
-main(){
+int main(){
 	
 	int escolha,menu,menu2,sair=0,num_discos,i=0,compara1,compara2,contador=0;
 	ControlePilha Cpilha1, Cpilha2, Cpilha3;
@@ -20,7 +18,7 @@ main(){
 	printf("\n\tREGRAS \n[1]-O disco 0 e considerado nulo por isso nao conta como disco\n");
 	printf("[2]-E proibido colocar um disco maior sobre um menor\n");
 	printf("[3]-Vence quem conseguir colocar os discos da mesma forma como estavam na torre 1 na torre 3 \ncom o menor numero de movimentos\n\n");
-	CriaPilhaVazia(&Cpilha1);//criando tres pilhas vazias
+	CriaPilhaVazia(&Cpilha1); //criando tres pilhas vazias
 	CriaPilhaVazia(&Cpilha2);
 	CriaPilhaVazia(&Cpilha3);
 	
@@ -49,7 +47,7 @@ main(){
 	
 			
 	if(num_discos > 64 || num_discos < 4){
-		printf("ATENÇÃO: ");
+		printf("ATENï¿½ï¿½O: ");
 		printf("Quantidade de discos nao permitido, digite novamente!\n\n");
 		system("pause");
 		return 0;
@@ -260,6 +258,7 @@ main(){
 				
 		}
 	}
+	return 0;
 }
 
 						

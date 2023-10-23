@@ -1,9 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "Pilha.h"
+#include "pilha.h"
 
 void CriaPilhaVazia(ControlePilha *Cpilha) {
-	Cpilha = malloc(sizeof(ControlePilha));//malocando espaço na memoria para pilha
+	Cpilha = malloc(sizeof(ControlePilha));//malocando espaÃ§o na memoria para pilha
 	Cpilha->base = NULL;//declarando topo null
 	Cpilha->topo = NULL;//base null
 }
