@@ -5,7 +5,7 @@ charlys machado  */
 
 #include <stdio.h>
 #include <stdlib.h>
-#include "pilha.c"
+#include "pilha.h"
 
 int main(){
 	
